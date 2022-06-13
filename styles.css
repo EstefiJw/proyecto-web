@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif; 
+    color: #7404b0;
+}
+
+header {
+    background: linear-gradient(32deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    max-height: 15vh;
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-nav {
+    padding: 1rem;
+}
+.lista-de-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-de-links li {    
+    list-style: none;
+    padding: 0rem 1.5rem;
+}
+
+.lista-de-links li a {
+    text-decoration: none;
+    color: #7404b0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 0rem;
+    gap: 1.5rem;
+    background: linear-gradient(32deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.contenedor-link-footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(238,174,202,0.5);
+    min-height: 80vh;
+}
+
+.contenedor-titulo-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-pag {
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.subtitulo-pag {
+    padding: 1rem;
+}
+
+.parrafo-titulo {
+    padding: 1rem;
+}
+
+.contenedor-tarjetas {
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #565555;
+    border-radius: 5px;
+    min-height: 350px;
+    max-width: 250px;
+}
+
+.tarjeta img {
+    width: 100%;
+    padding: 1rem;
+    max-height: 318px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.contenedor-produccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-produccion h2 {
+    padding: 2rem;
+}
+
+.contenedor-produccion a {
+    padding: 2rem;
+}
+
+#parrafo-acerca {
+    width: 50%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.titulo-formulario{
+    padding: 2rem;
+    display: block;
+
+}
+
+.direccion-email {
+    padding: 2rem;
+}
+
+.direccion-email input{
+    width: 200px;
+}
+
+.comentario {
+    padding: 2rem;
+}
+
+.comentario label {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.comentario button {
+    display: block;
+    margin-top: 1rem;
+}
+
