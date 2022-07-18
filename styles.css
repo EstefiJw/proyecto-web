@@ -10,14 +10,19 @@ header {
     background: linear-gradient(32deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     max-height: 15vh;
 }
+.contenedor-responsive{
+    display: none;
+}
 
 .contenedor-nav {
     display: flex;
     justify-content: space-around;
+    height: 17vh;
 }
 
 .logo-nav {
-    padding: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
 }
 .lista-de-links {
     display: flex;
@@ -225,20 +230,42 @@ main {
     body{
         overflow-x: hidden;
     }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem 0rem;
+        gap: 1.5rem;
+        background: linear-gradient(32deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    }
+    .logo-container{    
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .lista-de-links{
+        padding: 0;
+    }
 
     .contenedor-nav{
+        display: none;
+    }
+
+    .contenedor-responsive{
+        display: flex;
         flex-direction: column;
     }
 
     .logo-nav {
         align-self: center;
-        width: 90px;
-        padding: 0.5rem;
+        width: 65px;
+        padding-top: 0rem;
+        padding-bottom: 0.5rem;
+        justify-content: center;
     }
 
-    .lista-de-links {
-        padding: 1rem 0;
-    }
+   
 
     header{
         height: 15vh;
