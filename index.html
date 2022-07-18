@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -32,32 +34,101 @@
       </nav>
     </header>
     <main>
+      <section class="contenedor-carousel">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-12">
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Aromaterapia-scaled.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/difusor.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/descarga.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section class="contenedor-titulo-pag">
-        <h1 class="titulo-pag"> Baúl de cosas hermosas </h1>
-        <h3 class="subtitulo-pag"> Todo para tu hogar y bienestar </h3>
-        <p class="parrafo-titulo"> Aquí encontraras los productos para que tu hogar sea un espacio único y confortable </p>
+        <div class="container">
+          <div class="row" >
+            <div class="col-12 col-md-12" id="contenedor-titulo">
+              <h1 class="titulo-pag"> Baúl de cosas hermosas </h1>
+              <h3 class="subtitulo-pag"> Todo para tu hogar y bienestar </h3>
+              <p class="parrafo-titulo"> Aquí encontraras los productos para que tu hogar sea un espacio único y confortable </p>                    
+            </div>
+          </div>
+        </div>
+        
       </section>
-      <section class="contenedor-tarjetas">
-        <div class="tarjeta">
-          <img src="img/difusor.jpeg" alt="difusor" width="250px" height="auto">
-          <h3> Difusores </h3>
+      
+    <section class="cards">
+       
+        <div class="card 1">
+            <picture class="thumbnail vela">
+                <img src="img/vela.jpeg" alt="Vela" class="vela" >
+                <div class="card-content">
+                    <h2 class="card-title">
+                        Velas
+                    </h2>
+                    <p class="card-content-p">
+                        Encendé tu ambiente
+                    </p>
+                </div>
+            </picture>
+
         </div>
-        <div class="tarjeta">
-          <img src="img/vela.jpeg" alt="vela" width="250px" height="auto">
-          <h3> Velas </h3>
+        <div class="card 2">
+            <picture class="thumbnail difusor">
+                <img src="img/difusor.jpeg" alt="Difusor" class="difusor" >
+                <div class="card-content">
+                    <h2 class="card-title">
+                        Difusores
+                    </h2>
+                    <p class="card-content-p">
+                        Aromatizá tus espacios
+                    </p>
+                </div>
+            </picture>
         </div>
-        <div class="tarjeta">
-          <img src="img/aceite.webp" alt="aceite" width="250px" height="auto">
-          <h3> Aceites </h3>
+        <div class="card 3">
+            <picture class="thumbnail aceite">
+                <img src="img/aceite.webp" alt="Aceite" class="aceite" >
+                <div class="card-content">
+                    <h2 class="card-title">
+                        Aceites
+                    </h2>
+                    <p class="card-content-p">
+                        Hacé de tu hogar un espacio más sano
+                    </p>
+                </div>
+            </picture>
+
         </div>
-      </section>
+              
+    </section>
     </main>
     <footer>
       <div class="contenedor-link-footer">
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/" target="_blank" class="logo-footer">
           <img src="img/logo-fb.png" alt="logo facebook">
         </a>
-        <a href="https://www.instagram.com/" target="_blank">
+        <a href="https://www.instagram.com/" target="_blank" class="logo-footer">
           <img src="img/logo-ig.png" alt="logo instagram">
         </a>
       </div>
@@ -65,5 +136,7 @@
         <h4> Estefanía Jwanczyk 2022 </h4>
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>

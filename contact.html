@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
@@ -33,35 +33,67 @@
     </nav>
   </header>
   <main>
-      <section class="contenedor-titulo-pag">
-      <h1 class="titulo-pag"> Cotactáte con nosotros </h1>
-      <p class="parrafo-titulo" id="email">E-mail xxxxxx@xxxx.com.ar</p>
-      <p class="parrafo-titulo" id="telefono"> Teléfono (xxxx) xxx-xxxx </p>
-    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <h1 class="titulo-pag"> Cotactáte con nosotros </h1>
+          <h3 class="titulo-formulario"> Dejanos un comentario y nosotros nos comunicamos con vos </h3>
 
-    <form action="" class="formulario">
-      <div class="titulo-formulario">
-        <h2> Déjanos un comentario y nosotros te contáctaremos </h2>
-      </div>
-        <div class="direccion-email">
-          <label for="direccion-mail">Direccion de mail</label>
-          <input type="email" name="direccion-mail" id="direccion-mail" placeholder="Escriba su dirección de e-mail">
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="nombre@ejemplo.com" value="nombre@ejemplo.com">
+                <label for="floatingInputGrid">Dirección de Email</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected>Consulta acerca de productos</option>
+                  <option value="1">Consulta acerca de franquicias</option>
+                  <option value="2">Otras consultas</option>                  
+                </select>
+                <label for="floatingSelectGrid">Motivos</label>
+              </div>
+            </div>
+          </div>
+          <div class="row g-2">
+            <div class="col-md">
+              <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInputGrid" placeholder="Ingresá número de teléfono" value="Ingresá número de teléfono">
+                <label for="floatingInputGrid">Número de teléfono</label>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-floating">
+                <select class="form-select" id="floatingSelectGrid">
+                  <option selected>Movistar</option>
+                  <option value="1">Claro</option>
+                  <option value="2">Personal</option>                  
+                </select>
+                <label for="floatingSelectGrid">Compañía telefónica</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Deje un comentario aquí" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Consulta</label>
+          </div>
+
+          <button type="button" class="btn btn-secondary">Enviar</button>
+
         </div>
-        <div class="comentario">
-          <label for="comentario">Comentario o consulta</label>
-          <textarea name="comentario" id="comentario" placeholder="Escriba su comentario y/o consulta" cols="50"
-            rows="10"></textarea>
-          <button>Enviar</button>
-        </div>
       </div>
-    </form>
+    </div>
+    
   </main>
   <footer>
     <div class="contenedor-link-footer">
-      <a href="https://www.facebook.com/" target="_blank">
+      <a href="https://www.facebook.com/" target="_blank" class="logo-footer">
         <img src="img/logo-fb.png" alt="logo facebook">
       </a>
-      <a href="https://www.instagram.com/" target="_blank">
+      <a href="https://www.instagram.com/" target="_blank" class="logo-footer">
         <img src="img/logo-ig.png" alt="logo instagram">
       </a>
     </div>
